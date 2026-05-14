@@ -1,0 +1,85 @@
+/* ── WRAPPER ─────────────────────────────────────────────────────── */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+.full-width { width: 100%; }
+.full-width .field { width: 100%; }
+
+/* ── LABEL ───────────────────────────────────────────────────────── */
+.label {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+.label-error   { color: var(--color-feedback-error-text); }
+.label-success { color: var(--color-feedback-success-text); }
+.label-disabled{ color: var(--color-text-neutral-disabled); }
+
+/* ── FIELD ───────────────────────────────────────────────────────── */
+.field {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  height: 48px;
+  padding: 0 var(--spacing-4);
+  border: 1px solid var(--color-border-neutral);
+  border-radius: var(--radius-none);
+  background-color: var(--color-neutral-white);
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.field:focus-within {
+  border-color: var(--color-border-focus);
+  border-width: 1.5px;
+  outline: none;
+}
+
+/* ── STATES ──────────────────────────────────────────────────────── */
+.state-error   .field { border-color: var(--color-feedback-error-border);   background-color: var(--color-feedback-error-bg); }
+.state-success .field { border-color: var(--color-feedback-success-border); background-color: var(--color-feedback-success-bg); }
+.state-disabled .field { background-color: var(--color-neutral-100); border-color: var(--color-border-neutral-subtle); opacity: 0.55; cursor: not-allowed; }
+
+/* ── INPUT ELEMENT ───────────────────────────────────────────────── */
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  min-width: 0;
+}
+.input::placeholder { color: var(--color-text-neutral-placeholder); }
+.input:disabled     { cursor: not-allowed; }
+
+.state-error   .input { color: var(--color-feedback-error-text); }
+.state-success .input { color: var(--color-feedback-success-text); }
+.state-disabled .input { color: var(--color-text-neutral-disabled); }
+
+/* ── ICON ────────────────────────────────────────────────────────── */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-text-neutral-muted);
+  width: 16px;
+  height: 16px;
+}
+
+/* ── HELPER TEXT ─────────────────────────────────────────────────── */
+.helper {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-neutral-muted);
+  line-height: 1.4;
+}
+.helper-error   { color: var(--color-feedback-error-text); }
+.helper-success { color: var(--color-feedback-success-text); }

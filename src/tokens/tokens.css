@@ -1,0 +1,170 @@
+/* ============================================================
+   Cravo & Canella Design System — CSS Custom Properties
+   Gerado a partir das Figma Variables
+   ============================================================ */
+
+:root {
+
+  /* ── PRIMITIVES: Brand ─────────────────────────────────── */
+  --color-brand-off-white:    #fffbf5;
+  --color-brand-creme:        #f8f0db;
+  --color-brand-cocoa:        #47250c;
+  --color-brand-cc:           #813623;
+
+  /* ── PRIMITIVES: Warm ──────────────────────────────────── */
+  --color-warm-ocean:         #6495ad;
+  --color-warm-mostarda:      #eab257;
+  --color-warm-ginger-quente: #be4b0c;
+  --color-warm-sand:          #f0d2ac;
+  --color-cold-ginger-fria:   #965b3b;
+
+  /* ── PRIMITIVES: Neutral ───────────────────────────────── */
+  --color-neutral-white:  #ffffff;
+  --color-neutral-black:  #1a1a1a;
+  --color-neutral-50:     #fafaf9;
+  --color-neutral-100:    #f5f4f2;
+  --color-neutral-150:    #edecea;
+  --color-neutral-200:    #e2e1de;
+  --color-neutral-300:    #c8c6c2;
+  --color-neutral-400:    #a8a5a0;
+  --color-neutral-500:    #888480;
+  --color-neutral-600:    #6b6865;
+  --color-neutral-700:    #524f4d;
+  --color-neutral-800:    #3a3836;
+  --color-neutral-850:    #2e2c2a;
+  --color-neutral-900:    #222120;
+  --color-neutral-950:    #141312;
+
+  /* ── PRIMITIVES: Feedback ──────────────────────────────── */
+  --color-feedback-success-bg:     #edf5e9;
+  --color-feedback-success-text:   #3f6436;
+  --color-feedback-success-border: #74b85a;
+  --color-feedback-success-icon:   #4a9332;
+  --color-feedback-error-bg:       #fcecea;
+  --color-feedback-error-text:     #8b1c13;
+  --color-feedback-error-border:   #d94f3d;
+  --color-feedback-error-icon:     #c0392b;
+  --color-feedback-warning-bg:     #fdf5e4;
+  --color-feedback-warning-text:   #7a4e0c;
+  --color-feedback-warning-border: #e8a020;
+  --color-feedback-warning-icon:   #d4860a;
+  --color-feedback-info-bg:        #eaf2f6;
+  --color-feedback-info-text:      #1e4d62;
+  --color-feedback-info-border:    #6495ad;
+  --color-feedback-info-icon:      #4a7f99;
+
+  /* ── SEMANTIC: Background ──────────────────────────────── */
+  --color-background-base:           var(--color-brand-off-white);
+  --color-background-surface:        var(--color-brand-creme);
+  --color-background-inverse:        var(--color-brand-cocoa);
+  --color-background-accent:         var(--color-brand-cc);
+  --color-background-muted:          var(--color-warm-sand);
+  --color-background-neutral-subtle: var(--color-neutral-50);
+  --color-background-neutral:        var(--color-neutral-100);
+  --color-background-neutral-strong: var(--color-neutral-200);
+
+  /* ── SEMANTIC: Text ────────────────────────────────────── */
+  --color-text-primary:             var(--color-brand-cocoa);
+  --color-text-secondary:           var(--color-brand-cc);
+  --color-text-muted:               var(--color-neutral-900);
+  --color-text-on-dark:             var(--color-brand-off-white);
+  --color-text-link:                var(--color-warm-ocean);
+  --color-text-link-hover:          var(--color-brand-cc);
+  --color-text-neutral-strong:      var(--color-neutral-900);
+  --color-text-neutral:             var(--color-neutral-700);
+  --color-text-neutral-muted:       var(--color-neutral-500);
+  --color-text-neutral-placeholder: var(--color-neutral-400);
+  --color-text-neutral-disabled:    var(--color-neutral-300);
+
+  /* ── SEMANTIC: Border ──────────────────────────────────── */
+  --color-border-default:        var(--color-warm-sand);
+  --color-border-strong:         var(--color-cold-ginger-fria);
+  --color-border-focus:          var(--color-brand-cocoa);
+  --color-border-inverse:        var(--color-brand-creme);
+  --color-border-divider:        var(--color-warm-sand);
+  --color-border-neutral-subtle: var(--color-neutral-150);
+  --color-border-neutral:        var(--color-neutral-300);
+  --color-border-neutral-strong: var(--color-neutral-500);
+  --color-border-neutral-divider:var(--color-neutral-200);
+
+  /* ── SEMANTIC: Feedback ────────────────────────────────── */
+  --color-feedback-success-bg:     var(--color-feedback-success-bg);
+  --color-feedback-success-text:   var(--color-feedback-success-text);
+  --color-feedback-success-border: var(--color-feedback-success-border);
+  --color-feedback-success-icon:   var(--color-feedback-success-icon);
+  --color-feedback-error-bg:       var(--color-feedback-error-bg);
+  --color-feedback-error-text:     var(--color-feedback-error-text);
+  --color-feedback-error-border:   var(--color-feedback-error-border);
+  --color-feedback-error-icon:     var(--color-feedback-error-icon);
+  --color-feedback-warning-bg:     var(--color-feedback-warning-bg);
+  --color-feedback-warning-text:   var(--color-feedback-warning-text);
+  --color-feedback-warning-border: var(--color-feedback-warning-border);
+  --color-feedback-warning-icon:   var(--color-feedback-warning-icon);
+  --color-feedback-info-bg:        var(--color-feedback-info-bg);
+  --color-feedback-info-text:      var(--color-feedback-info-text);
+  --color-feedback-info-border:    var(--color-feedback-info-border);
+  --color-feedback-info-icon:      var(--color-feedback-info-icon);
+
+  /* ── COMPONENT: Button ─────────────────────────────────── */
+  --color-button-primary-bg:          var(--color-background-accent);
+  --color-button-primary-bg-hover:    var(--color-brand-cocoa);
+  --color-button-primary-text:        var(--color-text-on-dark);
+  --color-button-secondary-bg:        var(--color-neutral-200);
+  --color-button-secondary-border:    var(--color-border-strong);
+  --color-button-secondary-text:      var(--color-text-neutral);
+  --color-button-tertiary-text:       var(--color-brand-cc);
+  --color-button-tertiary-text-hover: var(--color-text-link-hover);
+  --color-button-disabled-bg:         var(--color-neutral-300);
+  --color-button-disabled-text:       var(--color-text-muted);
+
+  /* ── SPACING ───────────────────────────────────────────── */
+  --spacing-1:  4px;
+  --spacing-2:  8px;
+  --spacing-3:  12px;
+  --spacing-4:  16px;
+  --spacing-5:  20px;
+  --spacing-6:  24px;
+  --spacing-7:  28px;
+  --spacing-8:  32px;
+  --spacing-9:  36px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-14: 56px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-32: 128px;
+
+  /* ── RADIUS ────────────────────────────────────────────── */
+  --radius-none: 0px;
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+  --radius-2xl:  40px;
+  --radius-full: 9999px;
+
+  /* ── ELEVATION ─────────────────────────────────────────── */
+  --elevation-none:  none;
+  --elevation-xs:    0 1px  2px  rgba(71, 37, 12, 0.06);
+  --elevation-sm:    0 2px  8px  rgba(71, 37, 12, 0.08);
+  --elevation-md:    0 4px  16px rgba(71, 37, 12, 0.10);
+  --elevation-lg:    0 8px  32px rgba(71, 37, 12, 0.12);
+  --elevation-xl:    0 16px 48px rgba(71, 37, 12, 0.14);
+  --elevation-focus: 0 0    0    3px rgba(100, 149, 173, 0.35);
+
+  /* ── TYPOGRAPHY ────────────────────────────────────────── */
+  --font-primary:   'Polymath', sans-serif;
+  --font-editorial: 'Mokoko', serif;
+
+  /* ── BREAKPOINTS ───────────────────────────────────────── */
+  --bp-mobile-sm:  320px;
+  --bp-mobile:     375px;
+  --bp-mobile-lg:  430px;
+  --bp-tablet:     768px;
+  --bp-tablet-lg:  1024px;
+  --bp-desktop:    1280px;
+  --bp-desktop-lg: 1440px;
+  --bp-desktop-xl: 1920px;
+}
