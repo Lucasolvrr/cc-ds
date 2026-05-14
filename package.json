@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "node ./node_modules/.bin/storybook build",
+    "build-storybook": "./node_modules/.bin/storybook build",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
