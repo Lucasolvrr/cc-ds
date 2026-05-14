@@ -2,8 +2,9 @@
   "name": "cravo-canella-ds",
   "version": "1.0.0",
   "scripts": {
+    "postinstall": "chmod +x node_modules/.bin/*",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "./node_modules/.bin/storybook build",
+    "build-storybook": "storybook build",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
